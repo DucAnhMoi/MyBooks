@@ -10,6 +10,7 @@ const resolvers = require("./resolver/resolver.js");
 const mongoDataMethods = require("./data/db");
 
 // Connect to MongooDB
+//
 const connectDB = async () => {
   try {
     await mongoose.connect(

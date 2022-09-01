@@ -11,7 +11,7 @@ const BookList = () => {
   const [bookSelected, setBookSelected] = useState(null);
   const { loading, error, data } = useQuery(getBooks);
 
-  if (loading) return <p>Loading books.....</p>;
+  if (loading) return <p>Loading books...</p>;
   if (error) return <p>Error loading books</p>;
   console.log(data);
   return (
